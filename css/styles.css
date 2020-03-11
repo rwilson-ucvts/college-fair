@@ -235,7 +235,13 @@ header #back-arrow:hover {
 
 @media (max-width: 800px) {
   .bio {
+    backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     flex-direction: column;
+    transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
   }
 
   .bio img {
@@ -308,7 +314,6 @@ header #back-arrow:hover {
 footer {
   align-items: center;
   background-color: #001b45;
-  /* bottom: 0; */
   color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -316,7 +321,6 @@ footer {
   font-size: 1.5rem;
   height: 6rem;
   justify-content: center;
-  /* position: fixed; */
   user-select: none;
   width: 100%;
   z-index: 9;
