@@ -5,7 +5,9 @@ document.addEventListener("contextmenu", (e) => {
 });
 
 Array.from(document.getElementsByClassName("grid-item")).forEach((student) => {
-  student.onclick = animate;
+  if (student.id === "01") {
+    student.onclick = animate;
+  }
 });
 
 document.getElementById("back-arrow").onclick = animate;
