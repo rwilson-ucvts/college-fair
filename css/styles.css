@@ -51,6 +51,8 @@ header #back-arrow:hover {
   display: flex;
   flex-direction: column;
   height: 100%;
+  margin-bottom: 6rem;
+  margin-top: 6rem;
   min-height: calc(100vh - 6rem);
   perspective: 250rem;
   -moz-perspective: 250rem;
