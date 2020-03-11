@@ -51,8 +51,8 @@ header #back-arrow:hover {
   display: flex;
   flex-direction: column;
   height: 100%;
-  margin-bottom: 6rem;
-  margin-top: 6rem;
+  /* margin-bottom: 6rem;
+  margin-top: 6rem; */
   min-height: calc(100vh - 6rem);
   perspective: 250rem;
   -moz-perspective: 250rem;
@@ -80,7 +80,7 @@ header #back-arrow:hover {
 .container .master {
   display: block;
   height: 100%;
-  margin-bottom: 6rem;
+  /* margin-bottom: 6rem; */
   width: 100%;
 }
 
@@ -91,9 +91,10 @@ header #back-arrow:hover {
 .container .detail {
   display: none;
   height: 100%;
-  margin-bottom: 3rem;
+  /* margin-bottom: 3rem; */
   margin-top: 6rem;
   padding: 3rem;
+  padding-bottom: 0;
   transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
@@ -295,6 +296,7 @@ header #back-arrow:hover {
 @media (max-width: 700px) {
   .portfolio .grid {
     grid-template-rows: 1fr;
+    padding-bottom: 0;
   }
 }
 
@@ -305,12 +307,12 @@ header #back-arrow:hover {
   }
 }
 
-/******* FIXED FOOTER ****************************/
+/******* FOOTER **********************************/
 
 footer {
   align-items: center;
   background-color: #001b45;
-  bottom: 0;
+  /* bottom: 0; */
   color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -318,7 +320,7 @@ footer {
   font-size: 1.5rem;
   height: 6rem;
   justify-content: center;
-  position: fixed;
+  /* position: fixed; */
   user-select: none;
   width: 100%;
   z-index: 9;
