@@ -101,6 +101,9 @@ header #back-arrow:hover {
 }
 
 .container.flipped .detail {
+  backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   display: block;
   transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
@@ -235,13 +238,7 @@ header #back-arrow:hover {
 
 @media (max-width: 800px) {
   .bio {
-    backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
     flex-direction: column;
-    transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    -webkit-transform-style: preserve-3d;
   }
 
   .bio img {
