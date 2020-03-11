@@ -27,12 +27,18 @@ function animate(e) {
     // add projects
 
     setTimeout(() => {
+      document.getElementById("logo").style.display = "none";
+      document.getElementById("footer-text").style.display = "none";
+      document.getElementById("footer-logo").style.display = "block";
       document.getElementById("back-arrow").style.display = "block";
-    }, 750);
+    }, 300);
   } else {
     setTimeout(() => {
+      document.getElementById("logo").style.display = "block";
+      document.getElementById("footer-text").style.display = "block";
+      document.getElementById("footer-logo").style.display = "none";
       document.getElementById("back-arrow").style.display = "none";
-    }, 750);
+    }, 300);
   }
 
   if (container.classList.contains("flipped")) {
