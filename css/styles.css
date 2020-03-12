@@ -62,9 +62,6 @@ header #back-arrow:hover {
   transition: 1s;
   -moz-transition: 1s;
   -webkit-transition: 1s;
-
-  transform: translateZ(tz);
-  transform-style: preserve-3d;
 }
 
 .container.flipped {
