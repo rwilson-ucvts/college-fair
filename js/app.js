@@ -5,9 +5,9 @@ document.addEventListener("contextmenu", (e) => {
 });
 
 Array.from(document.getElementsByClassName("grid-item")).forEach((student) => {
-  if (student.id === "01") {
-    student.onclick = animate;
-  }
+  // if (student.id === "01") {
+  student.onclick = animate;
+  // }
 });
 
 document.getElementById("back-arrow").onclick = animate;
@@ -15,7 +15,8 @@ document.getElementById("back-arrow").onclick = animate;
 /////// FUNCTIONS /////////////////////////////////////////////////////
 
 function animate(e) {
-  const id = Number(e.target.parentNode.id) - 1;
+  // const id = Number(e.target.parentNode.id) - 1;
+  const id = 0;
   const container = document.getElementsByClassName("container")[0];
   const student = id > -1 ? studentData[id] : null;
 
@@ -27,18 +28,18 @@ function animate(e) {
     // add projects
 
     setTimeout(() => {
-      document.getElementById("logo").style.display = "none";
-      document.getElementById("footer-text").style.display = "none";
-      document.getElementById("footer-logo").style.display = "block";
+      // document.getElementById("logo").style.display = "none";
+      // document.getElementById("footer-text").style.display = "none";
+      // document.getElementById("footer-logo").style.display = "block";
       document.getElementById("back-arrow").style.display = "block";
-    }, 300);
+    }, 750);
   } else {
     setTimeout(() => {
-      document.getElementById("logo").style.display = "block";
-      document.getElementById("footer-text").style.display = "block";
-      document.getElementById("footer-logo").style.display = "none";
+      // document.getElementById("logo").style.display = "block";
+      // document.getElementById("footer-text").style.display = "block";
+      // document.getElementById("footer-logo").style.display = "none";
       document.getElementById("back-arrow").style.display = "none";
-    }, 300);
+    }, 750);
   }
 
   if (container.classList.contains("flipped")) {
