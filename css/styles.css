@@ -52,6 +52,7 @@ header #back-arrow:hover {
   flex-direction: column;
   height: 100%;
   min-height: calc(100vh - 6rem);
+  margin-top: 6rem;
   perspective: 250rem;
   -moz-perspective: 250rem;
   -webkit-perspective: 250rem;
@@ -62,7 +63,7 @@ header #back-arrow:hover {
   -moz-transition: 1s;
   -webkit-transition: 1s;
 
-  transform: translateZ(1000px);
+  transform: translateZ(tz);
   transform-style: preserve-3d;
 }
 
@@ -94,7 +95,6 @@ header #back-arrow:hover {
 .container .detail {
   display: none;
   height: 100%;
-  margin-top: 6rem;
   padding: 3rem;
   padding-bottom: 0;
   transform: rotateY(180deg);
@@ -126,7 +126,6 @@ header #back-arrow:hover {
 
 .intro {
   font-family: "Shadows Into Light", cursive;
-  margin-top: 6rem;
   padding-top: 1.5rem;
   text-align: center;
   user-select: none;
