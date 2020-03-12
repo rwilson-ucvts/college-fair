@@ -53,9 +53,9 @@ header #back-arrow:hover {
   height: 100%;
   min-height: calc(100vh - 6rem);
   margin-top: 6rem;
-  perspective: 250rem;
-  -moz-perspective: 250rem;
-  -webkit-perspective: 250rem;
+  perspective: 1000;
+  -moz-perspective: 1000;
+  -webkit-perspective: 1000;
   transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
@@ -68,12 +68,22 @@ header #back-arrow:hover {
   transform: rotateY(-180deg);
   -moz-transform: rotateY(-180deg);
   -webkit-transform: rotateY(-180deg);
+
+  perspective: 1000;
+  -moz-perspective: 1000;
+  -webkit-perspective: 1000;
+  transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
 }
 
 .container .card {
   backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
+  perspective: 1000;
+  -moz-perspective: 1000;
+  -webkit-perspective: 1000;
   transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
@@ -94,13 +104,16 @@ header #back-arrow:hover {
   height: 100%;
   padding: 3rem;
   padding-bottom: 0;
+  perspective: 1000;
+  -moz-perspective: 1000;
+  -webkit-perspective: 1000;
   transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
-  width: 100%;
   transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
+  width: 100%;
 }
 
 .container.flipped .detail {
@@ -108,6 +121,9 @@ header #back-arrow:hover {
   -moz-backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   display: block;
+  perspective: 1000;
+  -moz-perspective: 1000;
+  -webkit-perspective: 1000;
   transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
