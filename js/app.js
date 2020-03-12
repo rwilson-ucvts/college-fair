@@ -5,9 +5,7 @@ document.addEventListener("contextmenu", (e) => {
 });
 
 Array.from(document.getElementsByClassName("grid-item")).forEach((student) => {
-  // if (student.id === "01") {
   student.onclick = animate;
-  // }
 });
 
 document.getElementById("back-arrow").onclick = animate;
@@ -28,16 +26,10 @@ function animate(e) {
     // add projects
 
     setTimeout(() => {
-      // document.getElementById("logo").style.display = "none";
-      // document.getElementById("footer-text").style.display = "none";
-      // document.getElementById("footer-logo").style.display = "block";
       document.getElementById("back-arrow").style.display = "block";
     }, 750);
   } else {
     setTimeout(() => {
-      // document.getElementById("logo").style.display = "block";
-      // document.getElementById("footer-text").style.display = "block";
-      // document.getElementById("footer-logo").style.display = "none";
       document.getElementById("back-arrow").style.display = "none";
     }, 750);
   }
