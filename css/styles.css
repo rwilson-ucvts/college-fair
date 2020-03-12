@@ -52,6 +52,7 @@ header #back-arrow:hover {
   flex-direction: column;
   height: 100%;
   min-height: calc(100vh - 6rem);
+  overflow: hidden;
   perspective: 250rem;
   -moz-perspective: 250rem;
   -webkit-perspective: 250rem;
@@ -64,6 +65,7 @@ header #back-arrow:hover {
 }
 
 .container.flipped {
+  overflow: visible;
   transform: rotateY(-180deg);
   -moz-transform: rotateY(-180deg);
   -webkit-transform: rotateY(-180deg);
