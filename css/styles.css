@@ -53,9 +53,9 @@ header #back-arrow:hover {
   height: 100%;
   min-height: calc(100vh - 6rem);
   margin-top: 6rem;
-  perspective: 1000;
+  /* perspective: 1000;
   -moz-perspective: 1000;
-  -webkit-perspective: 1000;
+  -webkit-perspective: 1000; */
   transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
@@ -69,24 +69,24 @@ header #back-arrow:hover {
   -moz-transform: rotateY(-180deg);
   -webkit-transform: rotateY(-180deg);
 
-  perspective: 1000;
+  /* perspective: 1000;
   -moz-perspective: 1000;
   -webkit-perspective: 1000;
   transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
-  -webkit-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d; */
 }
 
 .container .card {
   backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-  perspective: 1000;
+  /* perspective: 1000;
   -moz-perspective: 1000;
-  -webkit-perspective: 1000;
-  transform-style: preserve-3d;
+  -webkit-perspective: 1000; */
+  /* transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
-  -webkit-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d; */
 }
 
 .container .master {
@@ -104,15 +104,15 @@ header #back-arrow:hover {
   height: 100%;
   padding: 3rem;
   padding-bottom: 0;
-  perspective: 1000;
+  /* perspective: 1000;
   -moz-perspective: 1000;
-  -webkit-perspective: 1000;
+  -webkit-perspective: 1000; */
   transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
-  transform-style: preserve-3d;
+  /* transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
-  -webkit-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d; */
   width: 100%;
 }
 
@@ -121,9 +121,9 @@ header #back-arrow:hover {
   -moz-backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   display: block;
-  perspective: 1000;
+  /* perspective: 1000;
   -moz-perspective: 1000;
-  -webkit-perspective: 1000;
+  -webkit-perspective: 1000; */
   transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
@@ -225,6 +225,10 @@ header #back-arrow:hover {
   display: flex;
   flex-direction: row;
   padding-bottom: 2.5rem;
+
+  transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
 }
 
 .bio img {
@@ -293,6 +297,10 @@ header #back-arrow:hover {
   backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
+
+  transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
 }
 
 .portfolio .grid {
