@@ -11,6 +11,8 @@ html {
 body {
   background-color: #001b45;
   user-select: none;
+
+  -webkit-backface-visibility: hidden !important;
 }
 
 /******* FIXED HEADER ****************************/
