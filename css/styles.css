@@ -11,8 +11,6 @@ html {
 body {
   background-color: #001b45;
   user-select: none;
-
-  -webkit-backface-visibility: hidden !important;
 }
 
 /******* FIXED HEADER ****************************/
@@ -116,6 +114,8 @@ header #back-arrow:hover {
   -moz-transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d; */
   width: 100%;
+
+  -webkit-backface-visibility: hidden !important;
 }
 
 .container.flipped .detail {
